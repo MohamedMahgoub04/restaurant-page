@@ -1,17 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lobster&display=swap');
 
 :root{
+ --white: #fff;
  --black: #252422;
- --main: rgb(242, 227, 188);
  --main: rgba(233, 233, 233, 1);
  --secondary: #035891;
- 
- --main-transparent: #f2e3bcb3;
- --main-transparent: rgb(242, 227, 188);
- --main-transparent: #ccc;
- --main-dark: #DAB041;
- --main-dark: #035891;
- --main-dark-transparent: rgb(193, 152, 117, 0.7);
+ /* --secondary: #DAB041; */
 }
 *{
  /* border: 1px solid green; */
@@ -26,6 +20,8 @@ body{
  overflow-x: hidden;
 }
 
+
+/* ----- Navbar ----- */
 ul{
  width: 100vw;
  height: 9vh;
@@ -35,14 +31,6 @@ ul{
  justify-content: center;
  align-items: center;
  gap: 5rem;
-}
-footer{
- /* position: absolute; */
-  left: 0;
-  bottom: 0;
- background-color: var(--main);
- width: 100vw;
-  height: 7.5vh;
 }
 li{
  padding: 0 0.5rem;
@@ -57,62 +45,14 @@ li{
 }
 li:hover{
  cursor: pointer;
- border-bottom: 3px solid var(--main-dark);
-}
-#content{
- background-image: url('baker2.jpg');
- background: url(https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png);
- background: white;
- background-color: #000000;
-  background-image: url("https://www.transparenttextures.com/patterns/xv.png");
- /* background-color: #035891;
- /* background-position: top; */
- /* background-size: cover;
- background-repeat: no-repeat; */
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
- background-attachment: fixed;
-}
-#main, #main1, #main2{
- border-radius: 10px;
- background-color: var(--main);
- width: 40vw;
- width: 65vw;
- height: auto;
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: space-around;
- justify-content: center;
- gap: 2rem;
- padding: 2rem 0 4rem;
-}
-h1{
- font-family: raleway;
- font-family: Lobster;
- font-size: 2.5rem;
-}
-hr{
- height: 4px;
- background-color: var(--main-dark);
- width: 80%;
- border: none;
- border-radius: 50%;
-}
-p{
- font-size: 20px;
-}
-#main button{
- font-size: 18px;
- padding: 1rem;
- border: none;
- background-color: var(--main-dark);
- border-radius: 5px;
- box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.1) , 0px 1px 2px 0px rgba(0,0,0,0.06) ;
+ border-bottom: 3px solid var(--secondary);
 }
 
+
+/* ----- Home ----- */
+#main > h1 {
+  font-size: 3rem;
+}
 #main, #main1, #main2{ 
  margin: 3rem;
 }
@@ -140,9 +80,8 @@ p span{
 }
 
 
-
+/* ----- Menu ----- */
 #items{
- 
  display: flex;
  flex-direction: column;
  align-items: center;
@@ -156,7 +95,7 @@ p span{
  display: flex;
  flex-direction: column;
  align-items: center;
- background-color: #fff;
+ background-color: var(--white);
  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),
   0px 1px 2px 0px rgba(0, 0, 0, 0.06);
 }
@@ -170,10 +109,9 @@ p span{
 .item > p{
  font-size: 1rem;
 }
-#main {
- display: flex;
-}
 
+
+/* ----- Contact ----- */
 #team{
  display: flex;
  flex-direction: column;
@@ -187,7 +125,7 @@ p span{
  justify-content: space-around;
  gap: 2rem;
  padding: 1rem;
- background-color: #fff;
+ background-color: var(--white);
  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),
    0px 1px 2px 0px rgba(0, 0, 0, 0.06);
  width: 100%;
@@ -212,6 +150,7 @@ p span{
 }
 
 
+/* ----- Footer ----- */
 @keyframes logo {
  from {
   transform: scale(1) rotate(0deg);
@@ -222,7 +161,7 @@ p span{
  }
 }
 footer {
- bottom: 1em;
+ background-color: var(--main);
  margin: auto;
  text-align: center;
  display: flex;
@@ -231,6 +170,9 @@ footer {
  align-items: center;
  width: 100vw;
  height: 10vh;
+}
+footer > p{
+  font-size: 1rem;
 }
 #github {
  height: 25px;
@@ -242,6 +184,46 @@ footer {
  animation-fill-mode: forwards;
 }
 
-#main > h1{
- font-size: 3rem;
+
+/* ----- All Tabs ----- */
+#content {
+  background-image: url('baker2.jpg');
+  background: url(https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png);
+  background: white;
+  background-color: #000000;
+  background-image: url("https://www.transparenttextures.com/patterns/xv.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+}
+#main,
+#main1,
+#main2 {
+  border-radius: 10px;
+  background-color: var(--main);
+  width: 40vw;
+  width: 65vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 0 4rem;
+}
+h1{
+  font-family: Lobster;
+  font-size: 2.5rem;
+}
+p{
+  font-size: 20px;
+}
+#main{
+ display: flex;
+}
+#main1, #main2{
+  display: none;
 }
