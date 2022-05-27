@@ -8,7 +8,6 @@
  /* --secondary: #DAB041; */
 }
 *{
- /* border: 1px solid green; */
  color: var(--black);
  font-family: poppins;
  margin: 0;
@@ -185,6 +184,37 @@ footer > p{
 }
 
 
+/* Top Button */
+html {
+  scroll-behavior: smooth;
+}
+#top {
+  transition: 0.1s;
+  bottom: 1rem;
+  right: 1rem;
+  border-radius: 5px;
+  font-family: raleway;
+  position: fixed;
+  background-color: var(--secondary);
+  width: 3rem;
+  height: 3rem;
+  text-decoration: none;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+#top:hover {
+  transition: 0.1s;
+  transform: scale(1.05);
+}
+#top > img {
+  width: 65%;
+  height: 65%;
+}
+
+
 /* ----- All Tabs ----- */
 #content {
   background-image: url('baker2.jpg');
@@ -198,9 +228,7 @@ footer > p{
   align-items: center;
   background-attachment: fixed;
 }
-#main,
-#main1,
-#main2 {
+#main, #main1, #main2 {
   border-radius: 10px;
   background-color: var(--main);
   width: 40vw;
@@ -221,9 +249,3 @@ h1{
 p{
   font-size: 20px;
 }
-/* #main{
- display: flex;
-}
-#main1, #main2{
-  display: none;
-} */

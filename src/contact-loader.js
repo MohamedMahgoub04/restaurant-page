@@ -1,9 +1,6 @@
 const contactLoader = () => {
  const content = document.querySelector('#content')
 
- const navbarItemList = ['Home', 'Menu', 'Contact']
- const navbar = document.createElement('ul')
-
  const main = document.createElement('div')
  const heading = document.createElement('h1')
 
@@ -13,22 +10,6 @@ const contactLoader = () => {
   {name: 'Dani Ricardo', src: 'dani-SzHsiYO6pZE-unsplash(1)(1).jpg', position: 'Waiter'}
  ]
  const team = document.createElement('div')
-
- const footer = document.createElement('footer')
- const footerText = document.createElement('p')
- const footerLink = document.createElement('a')
- const footerImage = document.createElement('img')
-
-
- // Generate Navbar
- // for (let item of navbarItemList){
- //  const navbarItem = document.createElement('li')
- //  navbarItem.innerHTML = item
- //  navbarItem.setAttribute('id', item)
- //  navbar.append(navbarItem)
- // }
- // content.append(navbar)
-
 
  // Generate Main Section
  main.setAttribute('id', 'main2')
@@ -62,19 +43,6 @@ const contactLoader = () => {
  main.append(team)
  content.append(main)
 
-
- // Generate Footer
- // footerText.innerHTML = 'MohamedMahgoub04'
- // footerLink.setAttribute('href', 'https://github.com/MohamedMahgoub04')
- // footerLink.setAttribute('target', 'blank')
- // footerImage.setAttribute('id', 'github')
- // footerImage.setAttribute('src', 'github.png')
- // footerImage.setAttribute('alt', 'Github-logo')
-
- // footerLink.append(footerImage)
- // footer.append(footerText)
- // footer.append(footerLink)
- // content.append(footer)
 }
 
 export { contactLoader }

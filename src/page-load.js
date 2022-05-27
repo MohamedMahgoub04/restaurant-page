@@ -1,8 +1,5 @@
-const pageLoad = () => {
+const homepageLoader = () => {
  const content = document.querySelector('#content')
-
- const navbarItemList = ['Home', 'Menu', 'Contact']
- const navbar = document.createElement('ul')
  
  const main = document.createElement('div')
  const heading = document.createElement('h1')
@@ -15,23 +12,7 @@ const pageLoad = () => {
  const location = document.createElement('div')
  const locationHeading = document.createElement('h3')
  const locationParagraph = document.createElement('p')
-
- const footer = document.createElement('footer')
- const footerText = document.createElement('p')
- const footerLink = document.createElement('a')
- const footerImage = document.createElement('img')
-
-
- // Generate Navbar
- // for (let item of navbarItemList){
- //  const navbarItem = document.createElement('li')
- //  navbarItem.innerHTML = item
- //  navbarItem.setAttribute('id', item)
- //  navbar.append(navbarItem)
- // }
- // content.append(navbar)
  
-
  // Generate Main Section
  main.setAttribute('id', 'main')
  heading.innerHTML = 'BurgerLords'
@@ -54,20 +35,7 @@ const pageLoad = () => {
  main.append(hours)
  main.append(location)
  content.append(main)
-
  
- // Generate Footer
- // footerText.innerHTML = 'MohamedMahgoub04'
- // footerLink.setAttribute('href', 'https://github.com/MohamedMahgoub04')
- // footerLink.setAttribute('target', 'blank')
- // footerImage.setAttribute('id', 'github')
- // footerImage.setAttribute('src', 'github.png')
- // footerImage.setAttribute('alt', 'Github-logo')
-
- // footerLink.append(footerImage)
- // footer.append(footerText)
- // footer.append(footerLink)
- // content.append(footer)
 }
 
-export { pageLoad }
+export { homepageLoader }

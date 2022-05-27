@@ -1,9 +1,6 @@
 const menuLoader = () => {
  const content = document.querySelector('#content')
 
- const navbarItemList = ['Home', 'Menu', 'Contact']
- const navbar = document.createElement('ul')
-
  const main1 = document.createElement('div')
  const heading = document.createElement('h1')
 
@@ -19,22 +16,6 @@ const menuLoader = () => {
   {name: 'Smoky BBQ', src: 'smoky-bbq.jpg', description: "Juicy 100% halal beef topped with crispy chicken strips, crispy onion, fresh Boston lettuce, melty Emmental cheese, and a smoky barbeque sauce, all nestled in a double water split artisan bun."}
  ]
  const items = document.createElement('div')
-
- const footer = document.createElement('footer')
- const footerText = document.createElement('p')
- const footerLink = document.createElement('a')
- const footerImage = document.createElement('img')
-
-
- // Generate Navbar
- // for (let item of navbarItemList){
- //  const navbarItem = document.createElement('li')
- //  navbarItem.innerHTML = item
- //  navbarItem.setAttribute('id', item)
- //  navbar.append(navbarItem)
- // }
- // content.append(navbar)
-
 
  // Generate Main Section
  main1.setAttribute('id', 'main1')
@@ -61,19 +42,6 @@ const menuLoader = () => {
  main1.append(items)
  content.append(main1)
 
-
- // Generate Footer
- // footerText.innerHTML = 'MohamedMahgoub04'
- // footerLink.setAttribute('href', 'https://github.com/MohamedMahgoub04')
- // footerLink.setAttribute('target', 'blank')
- // footerImage.setAttribute('id', 'github')
- // footerImage.setAttribute('src', 'github.png')
- // footerImage.setAttribute('alt', 'Github-logo')
-
- // footerLink.append(footerImage)
- // footer.append(footerText)
- // footer.append(footerLink)
- // content.append(footer)
 }
 
 export { menuLoader }
