@@ -23,13 +23,13 @@ const pageLoad = () => {
 
 
  // Generate Navbar
- for (let item of navbarItemList){
-  const navbarItem = document.createElement('li')
-  navbarItem.innerHTML = item
-  navbarItem.setAttribute('id', item)
-  navbar.append(navbarItem)
- }
- content.append(navbar)
+ // for (let item of navbarItemList){
+ //  const navbarItem = document.createElement('li')
+ //  navbarItem.innerHTML = item
+ //  navbarItem.setAttribute('id', item)
+ //  navbar.append(navbarItem)
+ // }
+ // content.append(navbar)
  
 
  // Generate Main Section
@@ -57,17 +57,17 @@ const pageLoad = () => {
 
  
  // Generate Footer
- footerText.innerHTML = 'MohamedMahgoub04'
- footerLink.setAttribute('href', 'https://github.com/MohamedMahgoub04')
- footerLink.setAttribute('target', 'blank')
- footerImage.setAttribute('id', 'github')
- footerImage.setAttribute('src', 'github.png')
- footerImage.setAttribute('alt', 'Github-logo')
+ // footerText.innerHTML = 'MohamedMahgoub04'
+ // footerLink.setAttribute('href', 'https://github.com/MohamedMahgoub04')
+ // footerLink.setAttribute('target', 'blank')
+ // footerImage.setAttribute('id', 'github')
+ // footerImage.setAttribute('src', 'github.png')
+ // footerImage.setAttribute('alt', 'Github-logo')
 
- footerLink.append(footerImage)
- footer.append(footerText)
- footer.append(footerLink)
- content.append(footer)
+ // footerLink.append(footerImage)
+ // footer.append(footerText)
+ // footer.append(footerLink)
+ // content.append(footer)
 }
 
 export { pageLoad }
